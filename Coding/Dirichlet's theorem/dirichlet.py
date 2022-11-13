@@ -65,10 +65,12 @@ def findNumbers(a, b, n) :
 	else :
 		print("-1");
 
+#  	A065091 - OEIS sequence
+# 2n + 1
 # Driver Code
 if __name__ == "__main__" :
 
-	a = 4;
+	a = 2;
 	b = 1;
 	n = 10;
 
