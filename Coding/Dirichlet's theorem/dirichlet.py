@@ -1,5 +1,6 @@
 # Python3 implementation of the above approach
 from math import gcd, sqrt
+from sympy import Q, ask
 
 # Utility function to check
 # whether two numbers is
@@ -11,25 +12,6 @@ def coprime(a, b) :
 		
 	else :
 		return False;
-
-# Utility function to check
-# whether a number is prime
-# or not
-def isPrime(n) :
-
-	# Corner case
-	if (n <= 1) :
-		return False;
-
-	if (n == 2 or n == 3) :
-		return True;
-
-	# Check from 2 to sqrt(n)
-	for i in range(2, int(sqrt(n)) + 1) :
-		if (n % i == 0) :
-			return False;
-
-	return True;
 
 # finding the Prime numbers
 def findNumbers(a, b, n) :
@@ -61,7 +43,7 @@ def findNumbers(a, b, n) :
 			# checking the form of a+nb
 			num1 = a + (c1 * b);
 			
-			if (isPrime(num1)):
+			if ask(Q.prime(num1)):
 				
 				st.add(num1);
 				
@@ -70,13 +52,13 @@ def findNumbers(a, b, n) :
 			# Checking the form of b+na
 			num2 = b + (c2 * a);
 			
-			if (isPrime(num2)):
+			if ask(Q.prime(num2)):
 				st.add(num2);
 	
 			c2 += 1;
 
 		for i in st :
-			print(i, end = " ");
+			print(i, end = ", ");
 
 	# If 'possible' is false
 	# return -1
@@ -86,7 +68,7 @@ def findNumbers(a, b, n) :
 # Driver Code
 if __name__ == "__main__" :
 
-	a = 2;
+	a = 4;
 	b = 1;
 	n = 10;
 
