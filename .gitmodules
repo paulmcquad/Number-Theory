@@ -1,0 +1,3 @@
+[submodule "Coding/EGZ"]
+	path = Coding/EGZ
+	url = git@github.com:paulmcquad/EGZ.git
