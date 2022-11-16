@@ -1,4 +1,5 @@
 // CPP code to verify Euclid Euler Theorem
+// A000396 - https://oeis.org/A000396
 #include <bits/stdc++.h>
 using namespace std;
 
