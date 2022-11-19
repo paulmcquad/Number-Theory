@@ -9,4 +9,6 @@ def cf(num1,num2):
                 n.append(int(g/i))
     return n
 
-print(cf(int(input("1st:")),int(input("2nd:"))))
+
+if __name__ == "__main__":
+    print(cf(int(input("1st:")),int(input("2nd:"))))

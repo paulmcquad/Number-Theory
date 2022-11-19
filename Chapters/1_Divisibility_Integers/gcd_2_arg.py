@@ -11,5 +11,6 @@ import math
 a = int(input("1st:  "))
 b = int(input("2nd:  "))
 
-print ('gcd({0},{1}) = '.format(a,b), end ="")
-print (math.gcd(a, b))
+if __name__ == "__main__":
+    print ('gcd({0},{1}) = '.format(a,b), end ="")
+    print (math.gcd(a, b))
