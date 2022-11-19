@@ -13,5 +13,5 @@ b = int(input("2nd:  "))
 c = int(input("3rd:  "))
 
 if __name__ == "__main__":
-    print ('gcd({0}, {1}, {2}) = '.format(a,b,c), end ="")
+    print ('∴ gcd({0}, {1}, {2}) = '.format(a,b,c), end ="")
     print (math.gcd(a, b, c))

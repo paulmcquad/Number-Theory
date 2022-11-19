@@ -12,5 +12,5 @@ a = int(input("1st:  "))
 b = int(input("2nd:  "))
 
 if __name__ == "__main__":
-    print ('gcd({0},{1}) = '.format(a,b), end ="")
+    print ('∴ gcd({0},{1}) = '.format(a,b), end ="")
     print (math.gcd(a, b))

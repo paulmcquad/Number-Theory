@@ -24,9 +24,9 @@ if __name__ == "__main__":
     a = int(input("1st:  "))
     b = int(input("2nd:  "))
 
-    print ('gcd({0},{1}) = '.format(a,b), end ="")
+    print ('∴ gcd({0},{1}) = '.format(a,b), end ="")
     print (gcd(a, b))
 
-    print ('xgcd({0},{1}) = '.format(a,b), end ="")
+    print ('∴ xgcd({0},{1}) = '.format(a,b), end ="")
     print (xgcd(a, b))
     #print("xgcd(a, b) = ax + by")
