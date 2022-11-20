@@ -13,6 +13,6 @@ def is_prime(n: int) -> bool:
     return True
 
 if __name__ == "__main__":
-    print("Enter Prime No. to Check: ")
+    print("Prime or not: ")
     n = int(input())
     print(is_prime(n))
