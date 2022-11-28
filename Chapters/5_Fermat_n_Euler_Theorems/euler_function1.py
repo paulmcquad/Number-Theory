@@ -8,8 +8,5 @@ from sympy.ntheory.factor_ import totient
 
 #n = 24
 n = int(input("Enter N:\n"))
-
-# Use totient() method
-totient_n = totient(n)
 	
-print("∴ Φ({}) = {} ".format(n, totient_n)) # 1 5 7 11 13 17 19 23
+print("∴ Φ({}) = {} ".format(n, totient(n))) # 1 5 7 11 13 17 19 23
